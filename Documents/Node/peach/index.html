@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>  
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/6.3.3/video-js.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/6.3.3/video.js"></script>
+    <title>Document</title>
+    <style>
+	video{
+		width:100px;
+		height:100px;
+	}
+	button{
+		
+	}
+    </style>
+</head>
+<body>
+	<!-- <video id="play" webkit-playsinline="true" type="video/mp4"controls="controls"  src="http://ojebvmgul.bkt.clouddn.com/role/skill/skillvideo/11/skill_2.mp4"></video> -->
+	<video id="my-player" class="video-js vjs-default-skin" 
+		controls preload="auto" width="640" height="264"  data-setup="{}">
+		<source src="http://ojebvmgul.bkt.clouddn.com/role/skill/skillvideo/11/skill_2.mp4" type="video/mp4">
+	</video>
+	<button width="100" height="100">全屏</button>
+	<script>
+		var player = videojs('my-player');
+		console.log(player)
+		$("button").click(function(){
+			player.play();
+			console.log(player.supportsFullScreen())//获取是否支持全屏
+			//有三种方式进入全屏，enterFullScreen(),enterFullWindow()测试貌似不可行，下方可以
+			player.requestFullscreen();
+		})
+    </script>
+</body>
+</html>
