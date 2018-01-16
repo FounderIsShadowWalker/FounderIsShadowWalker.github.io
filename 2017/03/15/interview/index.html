@@ -1,0 +1,661 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="生活,工作," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="第一次面试阿里   第一次面试阿里的时候大约是去年暑假的时候，受豪情老师鼓励，第一次尝试面试阿里，这里感谢何幻老师投递了简历，让我有机会能感受一下阿里的选拔，一面是何幻老师亲自问的，闭包，原型链，bfc直接跳过吧，问了一些react相关的，坦白说那个时候自己刚接触react，停留在知识点很朦胧的问题，问了react diff算法的问题，和key的作用，很不幸，两个都没答上。   总结一下阿里一面：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面试阿里有感">
+<meta property="og:url" content="http://yoursite.com/2017/03/15/interview/index.html">
+<meta property="og:site_name" content="顺顺的小屋">
+<meta property="og:description" content="第一次面试阿里   第一次面试阿里的时候大约是去年暑假的时候，受豪情老师鼓励，第一次尝试面试阿里，这里感谢何幻老师投递了简历，让我有机会能感受一下阿里的选拔，一面是何幻老师亲自问的，闭包，原型链，bfc直接跳过吧，问了一些react相关的，坦白说那个时候自己刚接触react，停留在知识点很朦胧的问题，问了react diff算法的问题，和key的作用，很不幸，两个都没答上。   总结一下阿里一面：">
+<meta property="og:image" content="http://oymaq4uai.bkt.clouddn.com/922281957.jpg">
+<meta property="og:updated_time" content="2017-12-13T05:49:04.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="面试阿里有感">
+<meta name="twitter:description" content="第一次面试阿里   第一次面试阿里的时候大约是去年暑假的时候，受豪情老师鼓励，第一次尝试面试阿里，这里感谢何幻老师投递了简历，让我有机会能感受一下阿里的选拔，一面是何幻老师亲自问的，闭包，原型链，bfc直接跳过吧，问了一些react相关的，坦白说那个时候自己刚接触react，停留在知识点很朦胧的问题，问了react diff算法的问题，和key的作用，很不幸，两个都没答上。   总结一下阿里一面：">
+<meta name="twitter:image" content="http://oymaq4uai.bkt.clouddn.com/922281957.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/03/15/interview/"/>
+
+
+
+
+
+  <title> 面试阿里有感 | 顺顺的小屋 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">顺顺的小屋</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle"></p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/15/interview/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Shadow walker">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="顺顺的小屋">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="顺顺的小屋" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                面试阿里有感
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-15T21:19:52+08:00">
+                2017-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="第一次面试阿里"><a href="#第一次面试阿里" class="headerlink" title="第一次面试阿里"></a><b>第一次面试阿里</b></h2>   <p style="text-indent: 2em">第一次面试阿里的时候大约是去年暑假的时候，受豪情老师鼓励，第一次尝试面试阿里，这里感谢何幻老师投递了简历，让我有机会能感受一下阿里的选拔，一面是何幻老师亲自问的，闭包，原型链，bfc直接跳过吧，问了一些react相关的，坦白说那个时候自己刚接触react，停留在知识点很朦胧的问题，问了react diff算法的问题，和key的作用，很不幸，两个都没答上。<br>   总结一下阿里一面：js基础 css基础。基础的学习没有捷径的，无非就是实打实啃一些原理的书，高程，js面向对象编程都是不错的选择。<br><br><a id="more"></a><br>   一个月后，阿里二面了，二面的主考官语气很威严，面试的时候很担心是自己的学校不好让对方不满意，加上这是自己第一次面试，说一句瑟瑟发抖真的不为过。二面先问有没有做过什么项目，我说没有，坦白说垃圾学校跟老师做的项目说了还不如不说，当时是这样想的。然后问我懂不懂跨域，我说知道iframe和jsonp。然后简单描述了一下jsonp的原理，之前写一个原生的ajax库，属性是支持jsonp，这个问题答得很好，然后主考官问了，页面有多个jsonp 怎么区别各个callback，没答上，很紧张。其实不难，在库的入口绑个id，在闭包外，每次调用＋1，类似uuid。然后和前端约定好，callback就用这个uuid，可以挂在window下。面完之后，气的在床上打滚。第二个问题，是怎么能在一个固定长宽的容器内正常显示长宽不定的图片。我的回答是按照容器的长宽对图片进行等比例缩放。很遗憾，这个回答，主考官也不是很满意。然后这场面试以失败告终。<br>   总结一下阿里二面：有项目经验是最棒的，不然不知道聊什么，这个时候大多拼应急能力了，然后一定要冷静。<br><br>   </p> 
+
+
+<h2 id="第二次面试阿里"><a href="#第二次面试阿里" class="headerlink" title="第二次面试阿里"></a><b>第二次面试阿里</b></h2>   <p style="text-indent: 2em"><br>    2017年7.17 这个日子给的准确是因为某一位好心的阿里系员工帮我查看了一下，事毕业前校招的最后一次机会了。一面还是老生长谈，基础云云就跳过了。<br>    二面的时候是canvas 方向的，问的是一些具体的问题，在我github上的repo下，有一些3d球，和环形的demo，主考官对这些很感兴趣，回答的差强人意吧，这些repo已经是很早的demo了，经历了武汉2个月的java，和美团的react学习，canvas很多细节真的记不住了，就把自己的思路简单的过了一遍，然后全部说出来了，主考官沉了一下，感觉还算满意把。然后问了一个canvas 视频帧的问题，问的是如何用少数的帧尽可能播放流畅的视频，当时蒙了，着什么问题啊？想了一回，回答了：对不同的视频帧diff把，弄个相似度做阈值。在做个阈值内的不播放。主考官说：一帧的diff的单位是像素点，你确定做diff会比播放节省性能吗？ 然后就不说话了，确实没做过性能优化，也不好随便给答案，补充了一句，diff的canvas 可以放在离屏canvas里做，感觉尽力了，显然，主考官不是很满意。<br>    第二次二面：比第一次面试的冷静了，可以正常的思考了，还是缺乏深度的思考，不得不说 阿里对学习深度的考察是深的，最好有一些扩展性。<br>   </p>
+
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a><b>总结</b></h2>   <p style="text-indent: 2em"><br>    学习不是一蹴而就的过程，多半是磕磕绊绊的过程，遇到困难，解决困难，总结困难。 学习的过程中失败在所难免，希望自己能从失败中吸取教训，成为更优秀的自己。<br>    <img src="http://oymaq4uai.bkt.clouddn.com/922281957.jpg"><br>   </p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/生活/" rel="tag"># 生活</a>
+          
+            <a href="/tags/工作/" rel="tag"># 工作</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/15/meet-Her/" rel="next" title="遇到的人">
+                <i class="fa fa-chevron-left"></i> 遇到的人
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/01/16/4-in-love/" rel="prev" title="4_in_love">
+                4_in_love <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Shadow walker" />
+          <p class="site-author-name" itemprop="name">Shadow walker</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">Artikel</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">Tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一次面试阿里"><span class="nav-number">1.</span> <span class="nav-text">第一次面试阿里</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二次面试阿里"><span class="nav-number">2.</span> <span class="nav-text">第二次面试阿里</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Shadow walker</span>
+</div>
+
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
